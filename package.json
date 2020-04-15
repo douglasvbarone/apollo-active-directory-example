@@ -1,0 +1,42 @@
+{
+  "name": "apollo-active-directory-starter",
+  "version": "1.0.0",
+  "description": "A simple Apollo GraphQL server boilerplate with Active Directory authentication.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --ext js,graphql src/index.js --exec 'npx babel-node'",
+    "build": "babel src --out-dir dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasvbarone/apollo-active-directory-starter.git"
+  },
+  "keywords": [
+    "Apollo",
+    "GraphQL",
+    "Active",
+    "Directory"
+  ],
+  "author": "Douglas Barone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglasvbarone/apollo-active-directory-starter/issues"
+  },
+  "homepage": "https://github.com/douglasvbarone/apollo-active-directory-starter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4"
+  },
+  "dependencies": {
+    "apollo-server": "^2.12.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "ldapts": "^2.2.1"
+  }
+}
